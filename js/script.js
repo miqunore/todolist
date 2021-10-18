@@ -1,7 +1,14 @@
 let ADD_BUTTON = document.querySelector('#buttonWork');
 
+const work1 = {};
+
+const listWork = document.querySelector('#list_work');
 
 ADD_BUTTON.onclick = () => {
-    const newWork = document.querySelector('input').value;
-    console.log(newWork);
+    work1[document.querySelector('input').value] = 1;
+    console.log(work1);
+    console.log(work1.value);
+    listWork.innerHTML += `<input type="checkbox"><label>${document.querySelector('input').value}</label>`
+    document.querySelector('input').value = '';
 }
+
