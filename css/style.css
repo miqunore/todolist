@@ -31,3 +31,12 @@
     font-size: 16px;
     vertical-align: super;
 }
+
+.all_works {
+    border: solid 1px;
+    margin-bottom: 5px;
+}
+
+.btn_del {
+    float: right;
+}
