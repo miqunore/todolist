@@ -7,15 +7,18 @@ const listWork = document.querySelector('#list_work');
 function onOffCheckBox(y) {
      let chBox;
      let valueInBox = document.querySelector(`#labelCheckBox${y}`);
+     let valueCheckBox = document.querySelector(`#checkBoxs${y}`);
      chBox = document.querySelector(`#checkBoxs${y}`);
      if (chBox.checked) {
         work1[valueInBox.textContent] = false;
         valueInBox.style.textDecoration = 'line-through';
+        valueCheckBox.setAttribute("checked", 1);
         valueInBox.parentElement.classList.add("no_activ");
         valueInBox.parentElement.classList.remove("activ");
      } else {
         work1[valueInBox.textContent] = true;
         valueInBox.style.textDecoration = 'none';
+        valueCheckBox.removeAttribute("checked");
         valueInBox.parentElement.classList.remove("no_activ");
         valueInBox.parentElement.classList.add("activ");
      }
