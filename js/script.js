@@ -32,14 +32,23 @@ function buttonDelite(x) {
     delete work1[obj];
 }
 
+let nameChanged = (id) => {
+    let delObj = document.querySelector(`#labelCheckBox${id}`).value
+    delete work1[delObj]
+    document.querySelector(`#labelCheckBox${id}`).value = document.querySelector(`#labelCheckBox${id}`).value;
+    delObj = document.querySelector(`#labelCheckBox${id}`).value
+    work1[delObj] = true;
+    
+}
+
 ADD_BUTTON.onclick = () => {
-    work1[document.querySelector('input').value] = true;
+    work1[document.querySelector('#addWork').value] = true;
     listWork.innerHTML += `            <div class="all_works activ" id="divBlock${i}">
     <input type="checkbox" id="checkBoxs${i}" onchange="onOffCheckBox(${i})">
-    <label id="labelCheckBox${i}">${document.querySelector('input').value}</label>
+    <input id="labelCheckBox${i}" type="text" value="${document.querySelector('#addWork').value}" onchange="nameChanged(${i})">
     <button onclick="buttonDelite(${i})" id="buttonDelide${i}" class="btn_del">X</button>
     </div>`
-    document.querySelector('input').value = '';
+    document.querySelector('#addWork').value = '';
     i++
 }
 
