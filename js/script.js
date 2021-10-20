@@ -34,11 +34,12 @@ function buttonDelite(x) {
 
 let nameChanged = (id) => {
     let delObj = document.querySelector(`#labelCheckBox${id}`).value
+    let chengeInpyt = document.querySelector(`#labelCheckBox${id}`);
     delete work1[delObj]
-    document.querySelector(`#labelCheckBox${id}`).value = document.querySelector(`#labelCheckBox${id}`).value;
-    delObj = document.querySelector(`#labelCheckBox${id}`).value
+    chengeInpyt.setAttribute("value", delObj);
+    delObj = document.querySelector(`#labelCheckBox${id}`).value;
     work1[delObj] = true;
-    
+    console.log(work1);
 }
 
 ADD_BUTTON.onclick = () => {
