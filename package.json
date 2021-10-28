@@ -1,5 +1,5 @@
 {
-  "name": "todolistprojekt",
+  "name": "todolist",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,10 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/miqunore/todolist.git"
   },
-  "keywords": [
-    "todolist"
-  ],
-  "author": "RomanovDS",
+  "author": "RomanovDM",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/miqunore/todolist/issues"
