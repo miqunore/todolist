@@ -9,12 +9,11 @@ module.exports = {
     filename: 'bundle.js',
   },
   plugins: [
-    new HtmlWebpackPlugin(), // Generates default index.html
-    new HtmlWebpackPlugin({  // Also generate a test.html
+    new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'src/index.html'
     })
-  ]
+  ],
   devServer: {
     static: {
       directory: path.join(__dirname, 'public'),
