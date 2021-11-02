@@ -1,5 +1,10 @@
-import bar from './core/index.js';
-import './style.css';
+import { render } from './core/index.js';
 import './index.scss';
 
-bar();
+function TodoApp() {
+    return `
+    <h2>Todo App</h2>
+    `;
+}
+
+render(TodoApp, {}, document.getElementById('root'))
