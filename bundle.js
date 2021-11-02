@@ -1,0 +1,1 @@
+(()=>{"use strict";document.getElementById("root").innerHTML="\n    <h2>Todo App</h2>\n    "})();
