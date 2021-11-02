@@ -1,5 +1,5 @@
 import bar from './bar.js';
-import './core/style.css';
-import './core/scss.scss';
+import './style.css';
+import './scss.scss';
 
 bar();
