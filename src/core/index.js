@@ -1,3 +1,4 @@
-import bar from './bar.js';
-
-bar();
+export function render(component, props, parent) {
+  const html = component(props);
+  parent.innerHTML = html;
+}
