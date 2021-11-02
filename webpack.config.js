@@ -1,5 +1,4 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { userInfo } = require('os');
 const path = require('path');
 
 
