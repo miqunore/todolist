@@ -1,10 +1,5 @@
-import { render } from './core/index.js';
-import './index.scss';
+import { render } from "./core/index.js";
+import "./index.scss";
+import { App } from "./App.js";
 
-function TodoApp() {
-    return `
-    <h2>Todo App</h2>
-    `;
-}
-
-render(TodoApp, {}, document.getElementById('root'))
+render(App, {}, document.getElementById("root"));
