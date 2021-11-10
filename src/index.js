@@ -1,5 +1,6 @@
 import { render } from './core/index.js';
 import './index.scss';
+import {  } from './App.js';
 
 
 function TodoApp() {
