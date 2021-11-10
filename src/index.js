@@ -1,8 +1,8 @@
 import { render } from './core/index.js';
 import './index.scss';
-import { App } from './core/App.js';
+import { App } from './App.js';
 
 
 
 
-render(TodoApp, {}, document.getElementById('root'))
+render(App, {}, document.getElementById('root'))
